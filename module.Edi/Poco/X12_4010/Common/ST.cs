@@ -1,6 +1,4 @@
-﻿using Edi.Domain.Shared.Attributes;
-using Edi.Domain.Shared.Enums;
-using indice.Edi.Serialization;
+﻿using indice.Edi.Serialization;
 
 namespace module.Edi.Poco.X12_4010.Common
 {

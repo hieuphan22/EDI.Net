@@ -1,8 +1,8 @@
-﻿namespace Scm.Common.Domain.Shared.Enums.Edi
-{
-    using Scm.Common.Domain.Shared.Attributes;
-    using System.ComponentModel;
+﻿using System.ComponentModel;
+using Edi.Domain.Shared.Attributes;
 
+namespace Edi.Domain.Shared.Enums
+{
     public enum FunctionalIdentifierCode
     {
         [Description("Account Analysis (822)")]

@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using Scm.Common.Domain.Shared.Attributes;
+using Edi.Domain.Shared.Attributes;
 
 namespace Edi.Domain.Shared.Enums
 {

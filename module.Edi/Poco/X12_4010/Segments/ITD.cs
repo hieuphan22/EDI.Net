@@ -1,15 +1,12 @@
-﻿using System.Collections.Generic;
-using Edi.Domain.Shared.Attributes;
+﻿using Edi.Domain.Shared.Attributes;
 using Edi.Domain.Shared.Enums;
-using Edi.Domain.Shared.Validation;
 using FluentValidation.Results;
 using indice.Edi.Serialization;
-using Scm.Edi.Domain.Shared.Attributes;
 
-namespace Edi.Application.Contracts.Poco.X12_4010.Segments
+namespace module.Edi.Poco.X12_4010.Segments
 {
     [EdiSegment, EdiPath("ITD")]
-    public class ITD : IEdiValidation<ITD>
+    public class ITD //: IEdiValidation<ITD>
     {
         [EdiValue("X(2)", Path = "ITD/0", Description = "ITD01 - Terms Type Code")]
         [EdiExtension(MinLength = 2, MaxLength = 2, Mandatory = false, EdiType = EdiType.Identifier)]
@@ -76,8 +73,7 @@ namespace Edi.Application.Contracts.Poco.X12_4010.Segments
         [EdiExtension(MinLength = 1, MaxLength = 10, Mandatory = false, EdiType = EdiType.Decimal)]
         public string Percent { get; set; }
 
-        public List<ValidationResult> ValidateEdi(ITD model)
-        {
+        public List<ValidationResult> ValidateEdi(ITD model) {
             return new List<ValidationResult>();
         }
     }

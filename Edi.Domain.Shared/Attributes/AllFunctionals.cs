@@ -1,13 +1,11 @@
-﻿using Scm.Common.Domain.Shared.Enums.Edi;
+﻿using Edi.Domain.Shared.Enums;
 
-namespace Scm.Edi.Domain.Shared.Attributes
+namespace Edi.Domain.Shared.Attributes
 {
     public static class AllFunctionals
     {
-        public static FunctionalIdentifierCode[] All
-        {
-            get
-            {
+        public static FunctionalIdentifierCode[] All {
+            get {
                 return new[]
                 {
                     FunctionalIdentifierCode.PurchaseOrder,

@@ -1,13 +1,11 @@
-﻿using System;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
-namespace Scm.Common.Domain.Shared.Exceptions
+namespace Edi.Domain.Shared.Exceptions
 {
     [Serializable]
     public class ConverterException : Exception
     {
-        public ConverterException()
-        {
+        public ConverterException() {
         }
 
         /// <summary>
@@ -15,19 +13,16 @@ namespace Scm.Common.Domain.Shared.Exceptions
         /// </summary>
         /// <param name = "message">The message.</param>
         public ConverterException(string message)
-            : base(message)
-        {
+            : base(message) {
             HelpLink = "https://scssolutions.io/";
         }
 
         public ConverterException(string message, Exception innerException)
-            : base(message, innerException)
-        {
+            : base(message, innerException) {
         }
 
         protected ConverterException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
+            : base(info, context) {
         }
     }
 }

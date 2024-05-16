@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using Edi.Domain.Shared.Attributes;
 using Edi.Domain.Shared.Enums;
-using Edi.Domain.Shared.Validation;
 using FluentValidation.Results;
 using indice.Edi.Serialization;
-using Scm.Edi.Domain.Shared.Attributes;
 
-namespace Edi.Application.Contracts.Poco.X12_4010.Segments
+namespace module.Edi.Poco.X12_4010.Segments
 {
     [EdiSegment]
     [EdiPath("IT8")]
-    public class IT8 : IEdiValidation<IT8>
+    public class IT8 //: IEdiValidation<IT8>
     {
         [EdiValue("X(2)", Path = "IT8/0", Description = "IT801 - Sales Requirement Code")]
         [EdiExtension(MinLength = 1, MaxLength = 2, Mandatory = false, EdiType = EdiType.Identifier)]
@@ -148,8 +146,7 @@ namespace Edi.Application.Contracts.Poco.X12_4010.Segments
         [EdiExtension(MinLength = 1, MaxLength = 48, Mandatory = false, EdiType = EdiType.Alphanumeric)]
         public string ProductOrServiceID10 { get; set; }
 
-        public List<ValidationResult> ValidateEdi(IT8 model)
-        {
+        public List<ValidationResult> ValidateEdi(IT8 model) {
             return new List<ValidationResult>();
         }
     }

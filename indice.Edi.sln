@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "indice.Edi", "src\indice.Ed
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "indice.Edi.Tests", "test\indice.Edi.Tests\indice.Edi.Tests.csproj", "{6C51495A-98D6-423F-B14F-5AF38EE18D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "module.Edi", "module.Edi\module.Edi.csproj", "{2BC068CB-47F6-423B-86F1-2F2ACF0EAA3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "module.Edi", "module.Edi\module.Edi.csproj", "{2BC068CB-47F6-423B-86F1-2F2ACF0EAA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edi.Domain.Shared", "Edi.Domain.Shared\Edi.Domain.Shared.csproj", "{ADA46C5C-F638-4A7B-A490-5033B354A1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edi.Domain.Shared", "Edi.Domain.Shared\Edi.Domain.Shared.csproj", "{ADA46C5C-F638-4A7B-A490-5033B354A1A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

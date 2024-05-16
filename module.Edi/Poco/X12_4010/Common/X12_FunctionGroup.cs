@@ -1,17 +1,16 @@
-﻿using System.Collections.Generic;
-using Edi.Application.Contracts.Poco.X12_4010.Common;
-using indice.Edi.Serialization;
+﻿using indice.Edi.Serialization;
 
-namespace Scm.Edi.Dtos.X12_4010.Common
+namespace module.Edi.Poco.X12_4010.Common
 {
     /// <summary>
     /// X12 Function Group
     /// </summary>
     /// <typeparam name="T"></typeparam>
     [EdiGroup]
-    public class X12_FunctionGroup<T> : GS
-        where T : class
+    public class X12_FunctionGroup<T> where T : class
     {
+        public GS GS { get; set; }
+
         public List<T> Transactions { get; set; }
 
         public GE GE { get; set; }
@@ -21,8 +20,7 @@ namespace Scm.Edi.Dtos.X12_4010.Common
     /// X12 Function Group
     /// </summary>
     [EdiGroup]
-    public class X12_FunctionGroup
-        : X12_FunctionGroup<X12_Transaction>
+    public class X12_FunctionGroup : X12_FunctionGroup<X12_Transaction>
     {
     }
 }

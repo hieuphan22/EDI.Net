@@ -1,8 +1,8 @@
-﻿using Edi.Domain.Shared.Enums;
+﻿using Edi.Domain.Shared.Attributes;
+using Edi.Domain.Shared.Enums;
 using indice.Edi.Serialization;
-using Scm.Edi.Domain.Shared.Attributes;
 
-namespace Edi.Application.Contracts.Poco.X12_4010.Segments
+namespace module.Edi.Poco.X12_4010.Segments
 {
     [EdiSegment]
     [EdiPath("N2")]

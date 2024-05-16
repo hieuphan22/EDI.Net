@@ -1,11 +1,6 @@
-﻿using System.Collections.Generic;
-using Edi.Domain.Shared.Enums;
-using Edi.Domain.Shared.Validation;
-using FluentValidation.Results;
-using indice.Edi.Serialization;
-using Scm.Edi.Domain.Shared.Attributes;
+﻿using indice.Edi.Serialization;
 
-namespace Edi.Application.Contracts.Poco.X12_4010.Segments
+namespace module.Edi.Poco.X12_4010.Segments
 {
     [EdiSegment]
     [EdiPath("BEG")]

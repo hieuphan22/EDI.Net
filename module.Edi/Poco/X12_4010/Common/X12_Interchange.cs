@@ -1,13 +1,12 @@
-﻿using module.Edi.Poco.X12_4010.Common;
-
-namespace Scm.Edi.Dtos.X12_4010.Common
+﻿namespace module.Edi.Poco.X12_4010.Common
 {
     /// <summary>
     /// X12 Envelope
     /// </summary>
-    public class X12_Envelope<T> : ISA
-        where T : class
+    public class X12_Interchange<T> where T : class
     {
+        public ISA ISA { get; set; }
+
         public X12_FunctionGroup<T> FunctionGroup { get; set; }
 
         public IEA IEA { get; set; }
@@ -16,8 +15,7 @@ namespace Scm.Edi.Dtos.X12_4010.Common
     /// <summary>
     /// X12 Envelope
     /// </summary>
-    public class X12_Envelope
-        : X12_Envelope<X12_Transaction>
+    public class X12_Interchange : X12_Interchange<X12_Transaction>
     {
     }
 }

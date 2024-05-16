@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Scm.Edi.Domain.Shared.Enums
+namespace Edi.Domain.Shared.Enums
 {
     public enum WsoStatus
     {

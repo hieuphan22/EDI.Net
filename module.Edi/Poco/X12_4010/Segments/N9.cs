@@ -1,8 +1,8 @@
-﻿using Edi.Domain.Shared.Enums;
+﻿using Edi.Domain.Shared.Attributes;
+using Edi.Domain.Shared.Enums;
 using indice.Edi.Serialization;
-using Scm.Edi.Domain.Shared.Attributes;
 
-namespace Edi.Application.Contracts.Poco.X12_4010.Segments
+namespace module.Edi.Poco.X12_4010.Segments
 {
     [EdiSegment]
     [EdiPath("N9")]
@@ -21,7 +21,7 @@ namespace Edi.Application.Contracts.Poco.X12_4010.Segments
         [EdiExtension(MinLength = 1, MaxLength = 50, Mandatory = false, EdiType = EdiType.Alphanumeric)]
         public string FreeformDescription { get; set; }
 
-        [EdiValue("X(8)", Format = "yyyyMMdd",  Path = "N9/3", Description = "N904 -Date")]
+        [EdiValue("X(8)", Format = "yyyyMMdd", Path = "N9/3", Description = "N904 -Date")]
         [EdiExtension(MinLength = 8, MaxLength = 8, Mandatory = false, EdiType = EdiType.Date)]
         public string Date { get; set; }
 

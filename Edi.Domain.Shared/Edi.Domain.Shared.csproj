@@ -7,6 +7,44 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Validation\Common\**" />
+    <EmbeddedResource Remove="Validation\Common\**" />
+    <None Remove="Validation\Common\**" />
+    <Compile Remove="Poco\X12_4010\X12_754.cs" />
+    <Compile Remove="Poco\X12_4010\X12_753_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_753.cs" />
+    <Compile Remove="Poco\X12_4010\X12Envelope.cs" />
+    <Compile Remove="Poco\X12_4010\AMA_X12_850.cs" />
+    <Compile Remove="Poco\X12_4010\X12_997_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_997.cs" />
+    <Compile Remove="Poco\X12_4010\X12_943_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_943.cs" />
+    <Compile Remove="Poco\X12_4010\X12_940_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_940.cs" />
+    <Compile Remove="Poco\X12_4010\X12_945_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_945.cs" />
+    <Compile Remove="Poco\X12_4010\X12_944_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_944.cs" />
+    <Compile Remove="Poco\X12_4010\X12_856_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_856.cs" />
+    <Compile Remove="Poco\X12_4010\X12_855_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_855.cs" />
+    <Compile Remove="Poco\X12_4010\X12_865_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_865.cs" />
+    <Compile Remove="Poco\X12_4010\X12_860_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_860.cs" />
+    <Compile Remove="Poco\X12_4010\X12_846.cs" />
+    <Compile Remove="Poco\X12_4010\X12_810_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_810.cs" />
+    <Compile Remove="Poco\X12_4010\X12_754_Message.cs" />
+    <Compile Remove="Poco\X12_4010\X12_846_Message.cs" />
+    <Compile Remove="Poco\X12_4010\Envelope.cs" />
+    <Compile Remove="Poco\X12_4010\Base_X12_850.cs" />
+    <Compile Remove="Poco\X12_4010\AMA_X12_860.cs" />
+    <Compile Remove="Poco\X12_4010\AMA_X12_855.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.9.1" />
   </ItemGroup>
 

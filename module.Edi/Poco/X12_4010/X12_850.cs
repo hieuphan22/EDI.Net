@@ -1,13 +1,8 @@
-﻿using Scm.Common.Domain.Shared.Enums.Edi;
-using Scm.Edi.Dtos.X12_4010.Common;
-using indice.Edi.Serialization;
+﻿using indice.Edi.Serialization;
 using module.Edi.Poco.X12_4010.Common;
-using Edi.Application.Contracts.Poco.X12_4010.Common;
-using Edi.Application.Contracts.Poco.X12_4010.Segments;
-using System.Runtime.ConstrainedExecution;
-using System.Security.Cryptography;
+using module.Edi.Poco.X12_4010.Segments;
 
-namespace Edi.Application.Contracts.Poco.X12_4010
+namespace module.Edi.Poco.X12_4010
 {
     /// <summary>
     /// EDI 850 Basic
@@ -45,7 +40,7 @@ namespace Edi.Application.Contracts.Poco.X12_4010
         public class Order
         {
             #region Header Trailer
-          
+
             public ST ST { get; set; }
             public SE SE { get; set; }
 
