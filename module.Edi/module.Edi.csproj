@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Poco\**" />
+    <EmbeddedResource Remove="Poco\**" />
+    <None Remove="Poco\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Poco\X12_4010\Common\GE.cs" />
+    <Compile Include="Poco\X12_4010\Common\GS.cs" />
+    <Compile Include="Poco\X12_4010\Common\IEA.cs" />
+    <Compile Include="Poco\X12_4010\Common\ISA.cs" />
+    <Compile Include="Poco\X12_4010\Common\SE.cs" />
+    <Compile Include="Poco\X12_4010\Common\ST.cs" />
+    <Compile Include="Poco\X12_4010\Common\X12_Envelope.cs" />
+    <Compile Include="Poco\X12_4010\Common\X12_FunctionGroup.cs" />
+    <Compile Include="Poco\X12_4010\Common\X12_Transaction.cs" />
+    <Compile Include="Poco\X12_4010\Composite\C030.cs" />
+    <Compile Include="Poco\X12_4010\Segments\BEG.cs" />
+    <Compile Include="Poco\X12_4010\Segments\CUR.cs" />
+    <Compile Include="Poco\X12_4010\Segments\FOB.cs" />
+    <Compile Include="Poco\X12_4010\Segments\ITD.cs" />
+    <Compile Include="Poco\X12_4010\Segments\REF.cs" />
+    <Compile Include="Poco\X12_4010\Segments\TD5.cs" />
+    <Compile Include="Poco\X12_4010\X12_850.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Edi.Domain.Shared\Edi.Domain.Shared.csproj" />
+    <ProjectReference Include="..\src\indice.Edi\indice.Edi.csproj" />
+  </ItemGroup>
+
+</Project>
